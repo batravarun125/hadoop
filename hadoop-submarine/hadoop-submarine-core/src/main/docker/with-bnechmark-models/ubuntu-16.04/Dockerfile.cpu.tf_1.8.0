@@ -1,0 +1,4 @@
+FROM tf-1.8.0-cpu-base:0.0.1
+RUN mkdir /test
+ADD benchmarks /test/benchmarks
+RUN chown -R nobody /test
